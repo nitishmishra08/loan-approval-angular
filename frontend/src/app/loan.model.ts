@@ -12,3 +12,8 @@ export interface LoanDecision {
   interestRate: number | null;
   reason: string;
 }
+
+export interface LoanHistory {
+  readonly applicantId: string;
+  readonly decisions: LoanDecision[];
+}
